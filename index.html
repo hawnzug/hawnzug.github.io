@@ -1,67 +1,177 @@
-﻿<!doctype html><html><head><meta charset="utf-8"><style>
-      /* Separated from document_view.css to enable use in downloadable
-   export files. #cutAndCopyBucket is included for every rule because
-   we wwant cut/copied items to be formatted the same way as they
-   would be when exported. */
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Title</title>
+<link rel="stylesheet" href="base.css" />
+</head>
+<body><div class="container"><h1 id="2016新生开网必看">2016新生开网必看</h1>
 
-.formattedExport,
-#cutAndCopyBucket {
-    font-family: 'Helvetica Neue', Arial, Sans-serif;
-    color: #333;
-    font-size: 13px;
-    line-height: 17px;
-    /* used to set white-space: pre-wrap here, but that messes up GMail's
-       formatting of the export output, so moving that to the name and
-       notes separately. */
-}
+<p><div class="toc">
+<ul>
+<li><a href="#2016新生开网必看">2016新生开网必看</a><ul>
+<li><a href="#有问题怎么办">有问题怎么办？</a></li>
+<li><a href="#几个方案">几个方案</a><ul>
+<li><a href="#方案一">方案一</a></li>
+<li><a href="#方案二">方案二</a></li>
+<li><a href="#方案三不常见方案未亲测">方案三（不常见方案，未亲测）</a></li>
+<li><a href="#方案四基本不可能">方案四（基本不可能）</a></li>
+</ul>
+<li><a href="#ip">申请开通网络</a></li>
+<li><a href="#mac">查看MAC地址</a></li>
+<li><a href="#router">路由器设置</a></li>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
 
-.formattedExport .name, .formattedExport .note,
-#cutAndCopyBucket .name, #cutAndCopyBucket .note {
-    white-space: pre-wrap;
-}
+<p>每个本科生寝室都有一个百兆的端口，本教程的目的就是告诉大家如何通过这个端口来为寝室四个人的电脑手机或其他设备提供上网服务。</p>
 
-.formattedExport ul,
-#cutAndCopyBucket ul{
-    list-style: disc;
-    /* Needed to reset browser defaults. */
-    margin: 0;
-    padding: 0;
-}
+<h2 id="有问题怎么办">有问题怎么办？</h2>
 
-.formattedExport li,
-#cutAndCopyBucket li {
-    margin: 4px 0 4px 20px;
-    /* Needed to reset browser defaults. */
-    padding: 0;
-}
+<p>加Q群 579901265 有真相，最新最快最全上网指导点击就送！更有机会成为一名光荣的网管！</p>
 
-.formattedExport > .name,
-#cutAndCopyBucket > .name {
-    font-size: 16px;
-    line-height: 21px;
-}
+<h2 id="几个方案">几个方案</h2>
 
-.formattedExport > .note,
-#cutAndCopyBucket > .note {
-    font-size: 13px;
-    line-height: 17px;
-}
+<p>一般正常家用路由器是一个 WAN 口 + 四个 LAN 口，方案一二均够用。 <br>
+网线根据寝室结构和布线方式自行购买，注意长度，建议到寝室实测后再买。 <br>
+选择困难症患者建议方案一，简单粗暴快捷有效。</p>
 
-.formattedExport > ul,
-#cutAndCopyBucket > ul {
-    margin-top: 15px;
-}
+<h3 id="方案一">方案一</h3>
 
-.formattedExport .name.done,
-#cutAndCopyBucket .name.done {
-    text-decoration:line-through;
-    color:#999;
-}
+<p>需要：一台路由器，一个 IP，至少一根网线 <br>
+<strong>注意</strong>：所有人的电脑不必进行任何设置</p>
 
-.formattedExport .note,
-#cutAndCopyBucket .note {
-    font-size: 12px;
-    color:#666;
-}
+<ol>
+<li>一个同学申请 IP，获取相关信息（详见 <a href="#ip">如何申请IP</a>）</li>
+<li>登陆路由器管理界面</li>
+<li>根据申请所得信息设置路由器</li>
+<li>网线连接墙上端口和路由器 WAN 口（一般来说就是那个长得与众不同的口）</li>
+</ol>
 
-      </style></head><body class="formattedExport"><span class="name">2016新生开网必看</span><ul><li><span class="name">一些废话</span></li><li><span class="name">申请 IP</span><br /><span class="note">参见该指南1~6步 http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=newapply&amp; 方案一需要一个同学申请，方案二1~4个任选</span><ul><li><span class="name">查看本机 mac 地址</span></li><li><span class="name">到网管部官网填写申请</span></li><li><span class="name">等待开通</span></li></ul></li><li><span class="name">几个方案</span><br /><span class="note">一般正常家用路由器是一个 WAN 口 + 四个 LAN 口，方案一二均够用。</span><ul><li><span class="name">一台路由器，一个 IP，至少一根网线</span><ul><li><span class="name">一个同学申请 IP，获取相关信息</span></li><li><span class="name">所有人的电脑不必进行任何设置</span></li><li><span class="name">登陆路由器管理界面</span></li><li><span class="name">根据申请所得信息填写 IP，子网掩码，网关，DNS，更改 mac 地址</span></li><li><span class="name">网线连接墙上端口和路由器 WAN 口</span></li><li><span class="name">所有设备均能通过路由器来无线上网，有网线接口的电脑可以选择用网线连接路由器来上网</span></li></ul></li><li><span class="name">一台交换机，一台路由器，一至四个 IP，至少两根网线</span><br /><span class="note">理论上来说会比方案一快一点。。。</span><ul><li><span class="name">一个及以上同学申请 IP</span></li><li><span class="name">一根网线连接墙上端口和交换机，另一根网线连接交换机和路由器 WAN 口</span></li><li><span class="name">用某同学A的信息设置路由器，具体步骤同方案一</span></li><li><span class="name">所有同学都可以通过路由器上网，具体步骤同方案一，无需设置电脑，网线连接路由器或无线上网</span></li><li><span class="name">除A以外申请了 IP 的同学，另外可以选择通过交换机上网</span><ul><li><span class="name">网线连接电脑和交换机</span></li><li><span class="name">电脑相关信息设置</span><br /><span class="note">参见 http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=applyguide&amp; 第8步以后</span></li></ul></li></ul></li><li><span class="name">一台路由器（不常见方案，未亲测）</span><br /><span class="note">此方案为无线路由器作无线交换机使用，通过关闭 DHCP 服务</span><ul><li><span class="name">注意：如果四个人都申请了 IP 都希望有线连接路由器上网，则需要5个 LAN 口的路由器</span></li><li><span class="name">网线连接墙上端口和路由器某一个 LAN 口（注意是 LAN 口不是 WAN 口，不同于方案一二）</span></li><li><span class="name">路由器设置时，关闭 DHCP 服务</span></li><li><span class="name">无线网络正常连接</span></li><li><span class="name">电脑可以通过网线连接路由器，但是此时要设置相关信息，同方案二直连交换机的电脑设置</span><br /><span class="note">参见 http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=applyguide&amp; 第8步以后</span></li></ul></li></ul></li><li><span class="name">如何成为一名网管 加Q群 579901265 有真相</span></li></ul></body></html>
+<p>在此方案下，所有设备均能通过路由器来无线上网，有网线接口的电脑可以选择用网线连接路由器来上网。</p>
+
+
+
+<h3 id="方案二">方案二</h3>
+
+<p>理论上来说会比方案一快一点。。。</p>
+
+<p>需要：一台交换机，一台路由器，一至四个 IP，至少两根网线</p>
+
+<ol>
+<li>一个或一个以上同学申请 IP，获取相关信息（详见 <a href="#ip">如何申请IP</a>）</li>
+<li>一根网线连接墙上端口和交换机，另一根网线连接交换机和路由器 WAN 口</li>
+<li>用某同学A的信息设置路由器，同方案一</li>
+</ol>
+
+<p>此时效果同方案一，所有设备都可以通过路由器上网，无需设置电脑。</p>
+
+<p>除同学A以外申请了 IP 的同学，另外可以选择通过交换机上网。</p>
+
+<ol>
+<li>用网线连接电脑和交换机（不是路由器）</li>
+<li>在电脑上设置相关信息，参见 <a href="http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=applyguide&amp;">NIMO官方指南</a> 第8步以后</li>
+</ol>
+
+<h3 id="方案三不常见方案未亲测">方案三（不常见方案，未亲测）</h3>
+
+<p>此方案为无线路由器作无线交换机使用，通过关闭 DHCP 服务</p>
+
+<p>需要：一台路由器</p>
+
+<ol>
+<li><strong>注意</strong>：如果四个人都申请了 IP 都希望有线连接路由器上网，则需要5个 LAN 口的路由器</li>
+<li>网线连接墙上端口和路由器某一个 LAN 口（注意是 LAN 口不是 WAN 口，不同于方案一二）</li>
+<li>路由器设置时，关闭 DHCP 服务</li>
+<li>无线网络正常连接</li>
+</ol>
+
+<p>电脑可以通过网线连接路由器，但是此时要在电脑上设置相关信息，同方案二直连交换机的电脑设置，参见 <a href="http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=applyguide&amp;">NIMO官方指南</a> 第8步以后</p>
+
+<h3 id="方案四基本不可能">方案四（基本不可能）</h3>
+
+<p>需要：一台交换机</p>
+
+<p>放弃在寝室使用无线网络，所有电脑通过网线连接交换机上网。每个人申请一个IP，具体设置同方案二最后两条。</p>
+
+<h2 id="ip">申请开通网络</h2>
+
+<blockquote>
+  <p><strong>注意</strong>：</p>
+  
+  <ul>
+  <li>申请开网的<a href="http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=newapply&amp;">页面</a>需要通过交大校内的网络访问，建议连上名为SJTU的Wi-Fi（教学楼、图书馆、餐厅各处均有覆盖，寝室楼内没有）后再申请，或者通过挂交大的代理来进入页面</li>
+  <li>如果有同学想在家里挂交大代理来申请，请务必确认你已经获知以下必需信息：Jaccount 帐号，寝室楼号和寝室号，手机号（最好是上海号码）</li>
+  </ul>
+</blockquote>
+
+<p>具体也可以参考 <a href="http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=applyguide&amp;">NIMO官方指南</a> 1~6步。</p>
+
+<ol>
+<li>查看本机 mac 地址。详见下文 <a href="#mac">查看Mac</a> 或下拉查看</li>
+<li>到NIMO网站上填写申请 <a href="http://nimo.sjtu.edu.cn/aton/index.php?g=Home&amp;m=Index&amp;a=newapply&amp;">戳我</a></li>
+<li>等待开通</li>
+<li>当状态变为正常时申请成功，可以拍照记录相关信息</li>
+</ol>
+
+<h2 id="mac">查看MAC地址</h2>
+
+<p>这里最重要的一点就是<strong>不要把有线和无线搞错</strong>。</p>
+
+<h4 id="windows">Windows</h4>
+
+<p>方法一：</p>
+
+<ol>
+<li>打开运行（快捷键为徽标键(win) + r ）</li>
+<li>输入cmd，点击确定或按下回车</li>
+<li>出现一个黑乎乎的框，不要害怕，输入 <code>getmac -v</code> 并按下回车</li>
+<li>查看以太网（也可能叫本地连接）对应的物理地址（注意不要和无线网络连接搞错，否则到时候又要更改信息，比较麻烦）。一般形如<code>C8-0A-A9-6B-3B-57</code>，有英文有数字，十二位，每两位由减号分隔</li>
+<li>这个就是你需要的MAC地址了，把它记录下来</li>
+</ol>
+
+<p>方法二：</p>
+
+<ol>
+<li>找到右下角任务栏中网络图标并右键，点击打开网络和共享中心（或从控制面板进入），win7 则打开网络连接</li>
+<li>找到以太网（本地连接）的图标并右键，选择状态</li>
+<li>点击详细信息</li>
+<li>其中物理地址一项就是MAC地址，形如<code>C8-0A-A9-6B-3B-57</code></li>
+</ol>
+
+<p>其他：</p>
+
+<ul>
+<li>将方法一中的 <code>getmac -v</code> 替换为 <code>ipconfig/all</code> 或 <code>ipconfig -all</code> 并回车，然后查看以太网（本地连接）对应的物理地址</li>
+<li>在方法二第2步中右键选择属性，将鼠标移至第一个长条形的框中，不要点击，此时会显示MAC地址</li>
+</ul>
+
+<h4 id="macos">MacOS</h4>
+
+<p>如果有同学使用USB外接网卡来使用有线上网，则查看 网络设置-高级-以太网，下面有一个以太网ID就是了。或者也可以打开终端输入 <code>ifconfig</code> 查看。</p>
+
+
+
+<h4 id="linux">Linux</h4>
+
+<p><code>ifconfig</code> 或 <code>ip addr</code></p>
+
+
+
+<h2 id="router">路由器设置</h2>
+
+<ol>
+<li>在Wi-Fi列表中找到你的路由器并连接</li>
+<li>打开浏览器，输入路由器背面的路由器管理界面的IP（一般为<code>192.168.1.1</code>，有的TP-LINK路由器是 <code>tplogin.cn</code> 比较奇葩）</li>
+<li>输入路由器背面默认的用户名和密码（一般为admin和admin，如果不能登陆可以尝试戳路由器背后的复位键来恢复出厂设置）</li>
+<li>进入网络参数-WAN口设置，连接类型改为静态IP，然后在下面填入申请所得信息（IP地址，子网掩码，网关，DNS）</li>
+<li>进入网络参数-MAC地址克隆，将MAC地址改为申请时用的MAC地址</li>
+<li>在无线设置中开启无线功能，并设置 Wi-Fi 名称及密码</li>
+<li>建议修改登陆口令及密码</li>
+<li>设置完成，重启路由器</li>
+</ol></div></body>
+</html>
